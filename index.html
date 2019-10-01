@@ -70,14 +70,14 @@
             </div>
         </div>
     </nav>
-    <header class="masthead" style="background: url('assets/img/bg-pattern.png'), linear-gradient(to left, #7b4397, #dc2430);height: 100%;background-image: url(&quot;assets/img/guideratna-mirror.jpg&quot;);background-size: cover;background-repeat: no-repeat;">
+    <header id="firstinstance" class="masthead" style="padding-bottom: 10px; height: 100%; background-size: cover;background-repeat: no-repeat;">
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-lg-7 my-auto" style="padding-right: 0px;padding-left: 0px;">
                     <div class="mx-auto header-content">
                         <div class="jumbotron" style="background-color: rgba(233,236,239,0.59); margin-bottom: 35px;">
-                            <h1 style="color: rgb(0,0,0);font-family: Catamaran, sans-serif;font-size: 30px;">Book An Experience, Anytime, Anywhere!</h1>
-                            <p style="color: rgb(0,0,0);font-size: 15px;">Download the app for the exclusive deals ease of booking of tourist guides. Starting From just Rs 150/hour<br></p><a class="btn btn-outline-warning btn-xl js-scroll-trigger" role="button" href="#download" style="margin-top: 15px;background-color: rgb(0, 0, 0);">GET THE APP!</a></div>
+                            <h1 style="color: rgb(0,0,0);font-family: Catamaran, sans-serif;font-size: 40px;">Book An Experience, Anytime, Anywhere!</h1>
+                            <p style="color: rgb(0,0,0);font-size: 15px;">Download the app for the exclusive deals & ease of booking of tourist guides. Starting From just Rs 150/hour<br></p><a class="btn btn-outline-warning btn-xl js-scroll-trigger" role="button" href="#download" style="margin-top: 15px;background-color: rgb(0, 0, 0);">GET THE APP!</a></div>
                     </div>
                 </div>
             </div>
@@ -404,6 +404,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="assets/js/new-age.js"></script>
+    <script src="assets/js/manualScript.js"></script>
+    <script type="text/javascript">
+        var images = ["Bg1.jpg","Bg2.jpg","Bg3.jpg"];
+        $(function () {
+            var i = 0;
+            $("#firstinstance").css("background-image", "url(images/" + images[i] + ")");
+            setInterval(function () {
+                i++;
+                if (i == images.length) {
+                    i = 0;
+                }
+                $("#firstinstance").fadeOut("slow", function () {
+                    $(this).css("background-image", "url(images/" + images[i] + ")");
+                    $(this).fadeIn("slow");
+                });
+            }, 5000);
+        });
+    </script>
 </body>
 
 </html>

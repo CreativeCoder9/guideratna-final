@@ -70,14 +70,14 @@
             </div>
         </div>
     </nav>
-    <header class="masthead" style="background: url('assets/img/bg-pattern.png'), linear-gradient(to left, #7b4397, #dc2430);height: 100%;background-image: url(&quot;assets/img/guideratna-mirror.jpg&quot;);background-size: cover;background-repeat: no-repeat;">
+    <header id="firstinstance" class="masthead" style="padding-bottom: 10px; height: 100%; background-size: cover;background-repeat: no-repeat;">
         <div class="container h-100">
             <div class="row h-100">
-                <div class="col-lg-7 my-auto" style="padding-right: 0px;padding-left: 0px;">
+                <div class="col-lg-7 my-auto">
                     <div class="mx-auto header-content">
-                        <div class="jumbotron" style="background-color: rgba(233,236,239,0.59); margin-bottom: 35px;">
-                            <h1 style="color: rgb(0,0,0);font-family: Catamaran, sans-serif;font-size: 30px;">Book An Experience, Anytime, Anywhere!</h1>
-                            <p style="color: rgb(0,0,0);font-size: 15px;">Download the app for the exclusive deals ease of booking of tourist guides. Starting From just Rs 150/hour<br></p><a class="btn btn-outline-warning btn-xl js-scroll-trigger" role="button" href="#download" style="margin-top: 15px;background-color: rgb(0, 0, 0);">GET THE APP!</a></div>
+                        <div class="jumbotron" style="background-color: rgba(233,236,239,0.59);">
+                            <h1 style="color: rgb(0,0,0);font-family: Catamaran, sans-serif;">Book An Experience, Anytime, Anywhere!</h1>
+                            <p style="color: rgb(0,0,0);">Download the app for the exclusive deals & ease of booking of tourist guides. Starting From just Rs 150/hour<br></p><a class="btn btn-outline-warning btn-xl js-scroll-trigger" role="button" href="#download" style="margin-top: 15px; background-color: #030303">GET THE APP!</a></div>
                     </div>
                 </div>
             </div>
@@ -351,12 +351,13 @@
                 <div class="info-box"><i class="fa fa-phone-square my-info-icons"></i><span class="text-uppercase text-success">TOLL FREE&nbsp;Phone NO: </span><span>+91844444980</span></div>
             </div>
             <div class="col-12 col-sm-6 col-md-6 site-form">
-                <form id="my-form">
-                    <div class="form-group"><label class="sr-only" for="firstname">First Name</label></div><input class="form-control" type="text" name="name" placeholder="Name">
-                    <div class="form-group"><label class="sr-only" for="lastname">Last Name</label></div>
-                    <div class="form-group"><label class="sr-only" for="phonenumber">Phone Number</label></div>
-                    <div class="form-group"><label class="sr-only" for="email">Email Address</label><input class="form-control" type="text" name="email" required="" placeholder="Email" id="email"></div>
-                    <div class="form-group"><label class="sr-only" for="messages">Last Name</label><textarea class="form-control" rows="8" name="messages" required="" placeholder="Message"></textarea><button class="btn btn-secondary" type="submit" style="background-color: #fdca4d;margin-top: 28px;padding-right: 20px;padding-left: 20px;">send </button></div>
+                <form name="contact-form" id="contact-form" method="POST" action="contactform.php">
+                    <div class="form-group"><label class="sr-only" for="name">First Name</label></div><input class="form-control" type="text" name="your_name" placeholder="Name">
+                    <!-- <div class="form-group"><label class="sr-only" for="lastname">Last Name</label></div>
+                    <div class="form-group"><label class="sr-only" for="phonenumber">Phone Number</label></div> -->
+                    <div class="form-group"><label class="sr-only" for="email">Email Address</label><input class="form-control" type="text" name="your_email" required="" placeholder="Email" id="email"></div>
+                    <div class="form-group"><label class="sr-only" for="messages">messages</label><textarea class="form-control" rows="8" name="your_message" required="" placeholder="Message"></textarea>
+                    <button class="btn btn-secondary" value="submit" type="submit" style="background-color: #fdca4d;margin-top: 28px;padding-right: 20px;padding-left: 20px;">send </button></div>
                 </form>
             </div>
             <div class="clearfix"></div>
@@ -404,6 +405,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="assets/js/new-age.js"></script>
+    <script src="assets/js/manualScript.js"></script>
+    <script type="text/javascript">
+        var images = ["Bg1.jpg","Bg2.jpg","Bg3.jpg"];
+        $(function () {
+            var i = 0;
+            $("#firstinstance").css("background-image", "url(images/" + images[i] + ")");
+            setInterval(function () {
+                i++;
+                if (i == images.length) {
+                    i = 0;
+                }
+                $("#firstinstance").fadeOut("slow", function () {
+                    $(this).css("background-image", "url(images/" + images[i] + ")");
+                    $(this).fadeIn("slow");
+                });
+            }, 5000);
+        });
+    </script>
 </body>
 
 </html>

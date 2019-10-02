@@ -69,17 +69,32 @@
             </div>
         </div>
     </nav>
-    <div id="contact-us" class="contact-clean" style="padding: 84px;">
-        <form method="post">
-            <h2 class="text-center">Are You Interested In Joining Our Growing No Of New Generation Guides?</h2>
-            <p style="font-size: 13px;">Many people are working as guides &amp; earning handome salary. If you are interested then even if you don't have any experience in this field, get in touch! We will help you learn and become the next generation of tourist guide with the &nbsp;power
-                of technology!<br><br></p>
-            <h5 class="text-center" style="font-size: 17px;">So, with out any hesitation, Contact Us</h5>
-            <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
-            <div class="form-group"><input class="form-control" type="text" name="Email" placeholder="email"></div>
-            <div class="form-group"><textarea class="form-control" rows="14" name="message" placeholder="Message"></textarea></div>
-            <div class="form-group"><button class="btn btn-secondary" type="submit" style="background-color: #fdca4d;">send </button></div>
-        </form>
+    <div class="container" id="contact-us" style="margin-top: 50px">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center text-dark" style="font-family: Righteous, cursive;color: rgba(4,4,4,0.9);">Contact Us</h2>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6" id="contact-box">
+                <!-- <p id="contact-text">Contact us</p> -->
+                <div class="info-box"><i class="fa fa-map-marker my-info-icons"></i><span class="text-uppercase text-success">Address: </span>
+                    <p class="text-secondary" style="color: #000000;background-color: #ffffff;"><i class="fa fa-home" style="width: 24px;height: 16px;"></i><b>Our kolkata office:</b>&nbsp;7th Floor, Monibhandar Building Webel Bhavan Premises, Sector5, Ring Rd, Bidhannagar, West Bengal 700091<br><i class="fa fa-home" style="width: 24px;height: 16px;"></i><b>Our
+                        Delhi Office:</b> &nbsp; Whizdom club, upper ground &amp; first floor, Savitri Cinema Complex, Greater kailash-||, New Delhi, 110148</p>
+                </div>
+                <div class="info-box"><i class="fa fa-envelope my-info-icons"></i><span class="text-uppercase text-success">Email: </span><span>info@guideratna.com</span></div>
+                <div class="info-box"><i class="fa fa-phone-square my-info-icons"></i><span class="text-uppercase text-success">TOLL FREE&nbsp;Phone NO: </span><span>+91844444980</span></div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 site-form">
+                <form name="contact-form" id="contact-form" method="POST" action="contactform.php">
+                    <div class="form-group"><label class="sr-only" for="name">First Name</label></div><input class="form-control" type="text" name="your_name" placeholder="Name">
+                    <!-- <div class="form-group"><label class="sr-only" for="lastname">Last Name</label></div>
+                    <div class="form-group"><label class="sr-only" for="phonenumber">Phone Number</label></div> -->
+                    <div class="form-group"><label class="sr-only" for="email">Email Address</label><input class="form-control" type="text" name="your_email" required="" placeholder="Email" id="email"></div>
+                    <div class="form-group"><label class="sr-only" for="messages">messages</label><textarea class="form-control" rows="8" name="your_message" required="" placeholder="Message"></textarea>
+                    <button class="btn btn-secondary" value="submit" type="submit" style="background-color: #fdca4d;margin-top: 28px;padding-right: 20px;padding-left: 20px;">send </button></div>
+                </form>
+            </div>
+            <div class="clearfix"></div>
+        </div>
     </div>
     <div class="footer-dark" style="background-color: rgb(14,15,16);height: 453px;padding-top: 22px;">
         <footer class="shadow-lg" style="background-color: rgb(0,0,0);">

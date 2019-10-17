@@ -1016,8 +1016,8 @@ h6 {
 }
 
 #clients .clients-wrap {
-  border-top: 1px solid #d6eaff;
-  border-left: 1px solid #d6eaff;
+  /* border-top: 1px solid #d6eaff;
+  border-left: 1px solid #d6eaff; */
   margin-bottom: 30px;
 }
 
@@ -1035,10 +1035,10 @@ h6 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border-right: 1px solid #d6eaff;
-  border-bottom: 1px solid #d6eaff;
+  /* border-right: 1px solid #d6eaff;
+  border-bottom: 1px solid #d6eaff; */
   overflow: hidden;
-  background: #fff;
+  background-color: #f6f6f6;
   height: 160px;
 }
 

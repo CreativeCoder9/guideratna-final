@@ -2,6 +2,23 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155144787-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-155144787-1');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics For Ads-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155144787-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-155144787-2');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Book Tourist Guides, Anytime Anywhere | GuideRatna</title>
@@ -27,27 +44,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
     <link rel="stylesheet" href="assets/css/Animated-numbers-section.css">
-    
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="assets/css/best-carousel-slide.css">
     <link rel="stylesheet" href="assets/css/Clients.css">
     <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
-    <link rel="stylesheet" href="assets/css/Corporate-Footer-Clean.css">
-    
-    <link rel="stylesheet" href="assets/css/Dark-NavBar.css">
     <link rel="stylesheet" href="assets/css/ebs-contact-form-1.css">
     <link rel="stylesheet" href="assets/css/ebs-contact-form.css">
     <link rel="stylesheet" href="assets/css/Footer-Clean.css">
     <link rel="stylesheet" href="assets/css/Footer-Dark.css">
-    
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="assets/css/Process-Steps.css">
     <link rel="stylesheet" href="assets/css/Responsive-Youtube-Embed.css">
     <link rel="stylesheet" href="assets/css/Team-Boxed.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/manualscript.css">
+    <link rel="preload" href="assets/js/manualScript.js" as="script">
     
 </head>
 
@@ -413,50 +423,11 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/Animated-numbers-section.js"></script>
-    <script src="assets/js/Animated-Type-Heading.js"></script>
     <script src="assets/js/bs-animation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="assets/js/new-age.js"></script>
-    <script src="assets/js/manualScript.js"></script>
-    <!-- <script src="assets/js/fullclip.js"></script> -->
-    
-    <script type="text/javascript">
-        var images = ["Bg1.jpg","Bg2.jpg","Bg3.jpg"];
-            var i = 0; 			// Start Point
-            var time = 3000;	// Time Between Switch
-    //         $('#bgchange')
-    //   .css('background-image', 'url(' + settings.images[settings.current] + ')')
-    //   .css('-webkit-transition', + settings.transitionTime + 's ease-in-out')
-    //   .css('-moz-transition', + settings.transitionTime + 'ms ease-in-out')
-    //   .css('-ms-transition', + settings.transitionTime + 'ms ease-in-out')
-    //   .css('-o-transition', + settings.transitionTime + 'ms ease-in-out')
-    //   .css('transition', + settings.transitionTime + 'ms ease-in-out')
-            function changeImg(){
-            
-                $("#bgchange").css("background-image", "url(images/" + images[i] + ")" );
-
-
-
-                // Check If Index Is Under Max
-                if(i < images.length - 1){
-                // Add 1 to Index
-                i++; 
-                } else { 
-                    // Reset Back To O
-                    i = 0;
-                }
-
-                // Run function every x seconds
-                setTimeout("changeImg()", 5000);
-            }
-
-            // Run function when page loads
-            window.onload=changeImg;
-
-
-    </script>
-           
+    <script src="assets/js/manualScript.js"></script>       
 </body>
 
 </html>

@@ -23,8 +23,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Book Tourist Guides, Anytime Anywhere | GuideRatna</title>
     <meta name="description" content="Book a tourist guide and guided tours in real time like you book cabs in Ola/UBER. Starting from only Rs 150 per hour!! Available more than 200 tourist spots all over the world.">
-    <link rel="shortcut icon" type="image/jpg" href="/favicon.png"/>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <!-- <link rel="preload" href="assets/js/manualScript.js" as="script"> -->
+    <link rel="preload" href="assets/css/manualscript.css" as="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/manualscript.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
@@ -45,22 +49,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
     <link rel="stylesheet" href="assets/css/Animated-numbers-section.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="assets/css/best-carousel-slide.css">
     <link rel="stylesheet" href="assets/css/Clients.css">
-    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
-    <link rel="stylesheet" href="assets/css/ebs-contact-form-1.css">
-    <link rel="stylesheet" href="assets/css/ebs-contact-form.css">
-    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
     <link rel="stylesheet" href="assets/css/Footer-Dark.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="assets/css/Process-Steps.css">
-    <link rel="stylesheet" href="assets/css/Responsive-Youtube-Embed.css">
-    <link rel="stylesheet" href="assets/css/Team-Boxed.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preload" href="assets/js/manualScript.js" as="script">
     
 </head>
-
+<div id="loading"></div>
 <body id="page-top" style="overflow-x: hidden; background-color: #f6f6f6;">
     <nav class="navbar navbar-light navbar-expand-lg fixed-top navbar-light bg-light" id="mainNav" style="padding: 7px;padding-left: 7px;">
         <div class="container"><a class="navbar-brand js-scroll-trigger" href="index.html" style="color: #6dc496;"><img src="assets/img/GuideRatna-Logo.png" style="width: 49px; margin-right: 8px; "><span style="font-family: Righteous;">GuideRatna</span></a><button class="navbar-toggler float-right" data-toggle="collapse" data-target="#navbarResponsive"
@@ -158,7 +155,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6" style=" width: 625px;background-color: transparent;">
-                    <div class="jumbotron pulse animated hero-photography carousel-hero" style="padding-bottom: 98px;background-image: url(&quot;assets/img/WhatsApp%20Image%202019-09-11%20at%2010.49.19%20PM.jpeg&quot;);">
+                    <div class="jumbotron pulse animated hero-photography carousel-hero" style="padding-bottom: 98px; background-image: url(&quot;assets/img/WhatsApp%20Image%202019-09-11%20at%2010.49.19%20PM.jpeg&quot;);">
                         <h1 class="hero-title">Latest Update</h1>
                         <p class="hero-subtitle">Check out our latest updates & stay in touch.</p>
                         <p><a class="btn btn-secondary hero-button plat" role="button" href="Guideratna-updates.html" style="background-color: #49ae78;">Learn more</a></p>
@@ -372,7 +369,7 @@
                     </span></div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 site-form">
-                    <form name="contact-form" id="contact-form" method="POST" action="contactform.php">
+                    <form name="contact-form" id="contact-form" method="POST" action="contactmail.php">
                         <div class="form-group"><label class="sr-only" for="name">First Name</label></div><input class="form-control" type="text" name="your_name" placeholder="Name">
                         <!-- <div class="form-group"><label class="sr-only" for="lastname">Last Name</label></div>
                         <div class="form-group"><label class="sr-only" for="phonenumber">Phone Number</label></div> -->
@@ -411,15 +408,16 @@
                         <hr style="background-color: rgba(255,255,255,0.36);margin-top: -8px;margin-bottom: 11px;width: 100px;padding-right: 46px;"><img onclick="window.location.href='https://play.google.com/store/apps/details?id=com.kolweb.guideratna'" src="assets/img/GuideRatna-playStore.png" style="width: 135px;" >
                         <h3 style="font-size: -18px;color: rgba(255,255,255,0.61);margin-top: 5px;">Download the app directly on your android phone!</h3>
                     </div>
-                    <div class="col item social"><a href="https://www.facebook.com/pages/category/Tour-Guide/GuideRatna-295852841032963/" target="_blank"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"
+                    <div class="col item social"><a href="https://www.facebook.com/pages/category/Tour-Guide/GuideRatna-295852841032963/" target="_blank"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="https://www.youtube.com/channel/UCWevr-0I6D-7ewamj_c87CQ"
                             target="_blank"><i class="fab fa-youtube"></i></a><a href="https://www.linkedin.com/company/14561967/admin/
                             "><i class="icon ion-social-linkedin"></i></a></div>
                 </div>
-                <p class="copyright" style="color: #ffffff;"><br>©GuideRatna, 2018-19</p>
-                <p class="text-center copyright" style="color: #ffffff;padding-top: 0px;font-size: 10px;"><br>Made with&nbsp;<i class="fa fa-heart"></i>&nbsp; by Uniclick Solutions in India</p>
+                <p class="copyright" style="color: #ffffff;"><br>©GuideRatna, 2018-2020</p>
+                <a class="text-center copyright" style="color: #ffffff;padding-top: 0px;font-size: 10px;" href="https://uniclick.in" ><br>Made with&nbsp;<i class="fa fa-heart" style="color: crimson;" ></i>&nbsp; by Uniclick Solutions in India</a>
             </div>
         </footer>
     </div>
+    
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/Animated-numbers-section.js"></script>
@@ -427,7 +425,47 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="assets/js/new-age.js"></script>
-    <script src="assets/js/manualScript.js"></script>       
+    <script src="assets/js/manualScript.js"></script>
+    <script>
+        function hideLoader() {
+            $('#loading').hide();
+                 }
+            $('window').ready(hideLoader);
+
+            // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
+            setTimeout(hideLoader, 20 * 1000);
+            var images = ["Bg1.jpg","Bg2.jpg","Bg3.jpg"];
+            var i = 0; 			// Start Point
+            var time = 3000;	// Time Between Switch
+    //         $('#bgchange')
+    //   .css('background-image', 'url(' + settings.images[settings.current] + ')')
+    //   .css('-webkit-transition', + settings.transitionTime + 's ease-in-out')
+    //   .css('-moz-transition', + settings.transitionTime + 'ms ease-in-out')
+    //   .css('-ms-transition', + settings.transitionTime + 'ms ease-in-out')
+    //   .css('-o-transition', + settings.transitionTime + 'ms ease-in-out')
+    //   .css('transition', + settings.transitionTime + 'ms ease-in-out')
+            function changeImg(){
+
+                $("#bgchange").css("background-image", "url(images/" + images[i] + ")" );
+
+
+
+                // Check If Index Is Under Max
+                if(i < images.length - 1){
+                // Add 1 to Index
+                i++; 
+                } else { 
+                    // Reset Back To O
+                    i = 0;
+                }
+
+                // Run function every x seconds
+                setTimeout("changeImg()", 5000);
+            }
+
+            // Run function when page loads
+            window.onload=changeImg;
+    </script>       
 </body>
 
 </html>

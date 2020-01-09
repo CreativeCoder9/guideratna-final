@@ -71,16 +71,22 @@
         </div>
     </nav>
     <div id="contact-us" class="contact-clean" style="padding-top: 84px; text-align: justify;">
-        <form method="post">
+           
+            <!-- <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div> -->
+            <!-- <div class="form-group"><input class="form-control" type="text" name="Email" placeholder="email"></div> -->
+        <form name="contact-form" id="contact-form" method="POST" action="https://uniratana.000webhostapp.com/careermail.php">
             <h2 class="text-center">Are you interested Joining in our Platform as Tourist Guide?</h2>
             <p style="font-size: 13px;">Many  regional and local guides are already in our platform and getting opportunity to meet Inbound & domestic tourist. If you are passionate to Story Telling, Innovative and  willing to open our history & culture to Tourist – You are for this Job. Do not worry! We will train you and make ready for this profession.
                 <br><br></p>
             <h5 class="text-center" style="font-size: 17px;">Contact Us</h5>
-            <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
-            <div class="form-group"><input class="form-control" type="text" name="Email" placeholder="email"></div>
-            <div class="form-group"><input class="form-control" type="text" name="mobile" placeholder="mobile no"></div>
-            <div class="form-group"><textarea class="form-control" rows="14" name="message" placeholder="Message"></textarea></div>
-            <div class="form-group"><button class="btn btn-secondary" type="submit" style="background-color: #fdca4d;">send </button></div>
+                <div class="form-group"><label class="sr-only" for="name">First Name</label></div><input class="form-control" type="text" name="your_name" placeholder="Name">
+                <!-- <div class="form-group"><label class="sr-only" for="lastname">Last Name</label></div>
+                <div class="form-group"><label class="sr-only" for="phonenumber">Phone Number</label></div> -->
+                <div class="form-group"><label class="sr-only" for="email">Email Address</label><input class="form-control" type="text" name="your_email" required="" placeholder="Email" id="email"></div>
+                <div class="form-group"><input class="form-control" type="text" name="your_mobile" placeholder="mobile no"></div>
+                <div class="form-group"><label class="sr-only" for="messages">messages</label><textarea class="form-control" rows="8" name="your_message" required="" placeholder="Message"></textarea>
+            <!-- <div class="form-group"><textarea class="form-control" rows="14" name="message" placeholder="Message"></textarea></div> -->
+            <div class="form-group"><button onclick="alert('Your message is being sent. We will contact you soon!')" class="btn btn-secondary" type="submit" style="background-color: #fdca4d;">send </button></div>
         </form>
     </div>
     <div class="footer-dark" style="background-color: rgb(14,15,16);height: 453px;padding-top: 22px;">
@@ -109,12 +115,12 @@
                         <hr style="background-color: rgba(255,255,255,0.36);margin-top: -8px;margin-bottom: 11px;width: 100px;padding-right: 46px;"><img src="assets/img/GuideRatna-playStore.png" style="width: 135px;">
                         <h3 style="font-size: -18px;color: rgba(255,255,255,0.61);margin-top: 5px;">Download the app directly on your android phone!</h3>
                     </div>
-                    <div class="col item social"><a href="https://www.facebook.com/pages/category/Tour-Guide/GuideRatna-295852841032963/" target="_blank"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"
+                    <div class="col item social"><a href="https://www.facebook.com/pages/category/Tour-Guide/GuideRatna-295852841032963/" target="_blank"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="https://www.youtube.com/channel/UCWevr-0I6D-7ewamj_c87CQ"
                             target="_blank"><i class="fab fa-youtube"></i></a><a href="https://www.linkedin.com/company/14561967/admin/
                             "><i class="icon ion-social-linkedin"></i></a></div>
                 </div>
-                <p class="copyright" style="color: #ffffff;"><br>©GuideRatna, 2018</p>
-                <p class="text-center copyright" style="color: #ffffff;padding-top: 0px;font-size: 10px;"><br>Made with&nbsp;<i class="fa fa-heart"></i>&nbsp; by Uniclick Solutions in India</p>
+                <p class="copyright" style="color: #ffffff;"><br>©GuideRatna, 2018-2020</p>
+                <a href="https://uniclick.in" target="_blank" class="text-center copyright" style="color: #ffffff;padding-top: 0px;font-size: 10px;"><br>Made with&nbsp;<i class="fa fa-heart" style="color: crimson;"></i>&nbsp; by Uniclick Solutions in India</a>
             </div>
         </footer>
     </div>
